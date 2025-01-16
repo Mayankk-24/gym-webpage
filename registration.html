@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="registration.css" type="text/css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+
+</head>
+
+<body style="background-color: black;">
+    <div class="bg-image">
+        <nav>
+            <div class="main-nav flex">
+                <a href="#" class="logo">
+                    <img src="./Assets/logo.png.webp" alt="logo">
+                </a>
+                <div class="nav-links">
+                    <ul class="flex">
+                        <li><a href="home.html" class="hover-link center" id="upper">Home</a></li>
+                        <li><a href="about.html " class="hover-link center" id="upper">About us</a></li>
+                        <!-- <li><a href="#" class="hover-link center" id="upper">Services</a></li> -->
+                        <li><a href="pricing.html" class="hover-link center" id="upper">Pricing</a></li>
+                        <li><a href="ContactUs.html" class="hover-link center" id="upper"
+                                style="display: inline;">Contact us</a>
+                        </li>
+                        <li><a href="login.html" class="secondary-button">Login</a></li>
+                        <li><a href="registration.html" class="primary-button">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Gym Registration Form</h1><br><br>
+        <form method="get" class="py-3" id="register_form">
+            <!-- <h1>Gym Registration Form</h1><br><br> -->
+            <label for="mname">Member Name:</label><br>
+            <input type="text" placeholder="Enter your name"><br>
+            <label for="">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter your email"><br><span class="val_email"
+                style="color: red;"></span><br>
+            <label for="">Password:</label><br>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <span class="val_pass" style="color: red;"></span><br>
+            <label for="">Confirm Password:</label><br>
+            <input type="password" name="" id="" placeholder="Retype password"><br>
+            <label for="">Mobile No.:</label><br>
+            <input type="text" placeholder="Enter your mobile number" id="mobileno" name="mobileno"><br>
+            <span class="val_mno" style="color: red;"></span><br>
+            <label for="">Gender:</label>
+            <input type="radio" name="tt" id="tt" checked>
+            <label for="" style="color:#363636;">Male</label>
+            <input type="radio" name="tt" id="tt" checked>
+            <label for="" style="color:#363636;">Female</label><br>
+            <button type="submit" class="btn-submit" id="submit">Submit</button>
+            <!-- <button type="reset" class="btn btn-danger">Reset</button>-->
+        </form>
+    </div>
+    <!-- <script src="jquery.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#submit').click(function () {
+                var validation_holder = 0;
+                var email = $("form#register_form input[name='email']").val();
+                var email_regex = /^[\w%_\-.\d]+@[\w.\-]+.[A-Za-z]{2,6}$/; // reg ex email check
+                var mno = $("form#register_form input[name='mobileno']").val();
+                var password = $("form#register_form input[name='password']").val();
+                if (mno == "") {
+                    $("span.val_mno")
+                        .html("Mobile Number is required.")
+                        .addClass("validate");
+                    validation_holder = 1;
+                }
+                if (email == "") {
+                    $("span.val_email")
+                        .html("Email ID is required.")
+                        .addClass("validate");
+                    alert("email id requird");
+
+                    validation_holder = 1;
+                } else {
+                    if (!email_regex.test(email)) {
+                        // if invalid email
+
+                        $("span.val_email").html("Invalid Email!").addClass("validate");
+
+                        validation_holder = 1;
+                    } else {
+                        $("span.val_email").html("");
+                    }
+                }
+
+                if (password == "") {
+                    $("span.val_pass")
+                        .html("Password is required.")
+                        .addClass("validate");
+
+                    validation_holder = 1;
+                } else {
+                    $("span.val_pass").html("");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

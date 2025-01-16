@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="btn-1" onclick="myfun()">submit</button>
+    <div id="main"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn-1").click(function () {
+                $("#main").slideToggle(1000);
+            })
+        })
+        function myfun() {
+            var disdata = "<table border='5'><tr><th>sr</th><th>services</th><th>timing</th></tr>";
+            var req = new XMLHttpRequest();
+            req.open("get", "data.json", true);
+            req.onreadystatechange = function () {
+                if (req.readyState == 4 && req.status == 200) {
+                    var data = JSON.parse(req.responseText);
+                    for (var i = 0; i < data.length; i++) {
+                        disdata += "<tr><td>" + data[i].sr + "</td><td>" + data[i].services + "</td><td>" + data[i].timing + "</td></tr>";
+                    }
+                    document.getElementById("main").innerHTML = disdata;
+                }
+            }
+            req.send();
+        }
+
+    </script>
+</body>
+
+</html>

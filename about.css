@@ -1,0 +1,266 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.bg-image {
+    background-image: url('./Assets/breadcrumb-bg.jpg.webp');
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+/* navbar */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.logo img {
+    margin-left: 20px;
+    max-width: 100%;
+}
+
+.main-nav {
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.nav-links {
+    flex-basis: 730px;
+    margin-right: 20px;
+    position: relative;
+    top: 5px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 20px;
+}
+
+.hover-link {
+    color: white;
+    transition: 0.2s ease-out;
+    font-size: 17px;
+    font-weight: 600;
+
+}
+
+.hover-link:hover {
+    color: rgb(197, 88, 4);
+
+}
+
+.nav-links .primary-button {
+    /* background: transparent; */
+    border: 2px solid #f36100;
+    color: #ffffff;
+}
+
+.primary-button {
+    display: inline-block;
+    font-size: 14px;
+    padding: 17px 30px 16px;
+    color: #ffffff;
+    background-color: #f36100;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+}
+
+.nav-links .secondary-button {
+    background: transparent;
+    border: 2px solid #f36100;
+    color: #ffffff;
+}
+
+.secondary-button {
+    display: inline-block;
+    font-size: 14px;
+    padding: 17px 30px 16px;
+    /* color: #ffffff; */
+    /* background-color: #f36100; */
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    top: 3px;
+}
+
+.center {
+    position: relative;
+    right: 400px;
+    top: 3px;
+    left: -310px;
+}
+
+#upper {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+
+.container {
+    max-width: 1170px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.breadcrumb-text {
+    position: relative;
+    top: 120px;
+}
+
+.breadcrumb-text h2 {
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    line-height: 1.2;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: -2px;
+}
+
+.breadcrumb-text a {
+    font-size: 18px;
+    color: #ffffff !important;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+}
+
+#after {
+    color: #ffffff !important;
+    font-weight: 400;
+    font-size: 13px;
+    margin-right: 3px;
+}
+
+#con {
+    font-size: 18px;
+    color: #f36100;
+    font-weight: 700;
+}
+
+/* team section */
+.team-section {
+    background: #151515;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container-team {
+    max-width: 1170px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.team-title .section-title {
+    text-align: left;
+    float: left;
+}
+
+.section-title {
+    margin-bottom: 45px;
+}
+
+.section-title span {
+    font-size: 16px;
+    color: #f36100;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-title h2 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.appointment-btn {
+    display: inline-block;
+    font-size: 13px;
+    padding: 17px 30px 16px;
+    color: #ffffff;
+    /* background-color: #f36100; */
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+    background: transparent;
+    border: 2px solid #f36100;
+    /* width: 100%; */
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.appointment-btn:hover {
+    background-color: #f36100;
+    box-shadow: none;
+}
+
+#pic img {
+    background-size: cover;
+    height: auto;
+    width: 360px;
+    height: 501px;
+}
+
+table {
+    width: 700px;
+    margin: auto;
+    height: 400px;
+    border: none;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+table th {
+    height: 10px;
+    background-color: #f36100;
+    color: #151515;
+    border: 2px solid #f36100;
+    border-radius: 5px;
+}
+
+table td {
+    height: 10px;
+    background-color: #151515;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid #151515;
+}

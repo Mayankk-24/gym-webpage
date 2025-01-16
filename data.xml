@@ -1,0 +1,55 @@
+<data>
+<specalist>
+    <sr>1</sr>
+    <name>Dwayne Johnson</name>
+    <contact>7845123698</contact>
+    <experience>Body Building</experience>
+    <age>34</age>
+    <email>therock@gmail.com</email>
+</specalist>
+
+<specalist>
+    <sr>2</sr>
+    <name>mikhail nilov</name>
+    <contact>2154879632</contact>
+    <experience>Cardio</experience>
+    <age>39</age>
+    <email>mikhailnilov@gmail.com</email>
+</specalist>
+
+<specalist>
+    <sr>3</sr>
+    <name>Mike Tyson</name>
+    <contact>9632587412</contact>
+    <experience>Boxing</experience>
+    <age>29</age>
+    <email>MikeTyson@gmail.com</email>
+</specalist>
+
+<specalist>
+    <sr>4</sr>
+    <name>Tom Hardy</name>
+    <contact>9632587412</contact>
+    <experience>Yoga</experience>
+    <age>35</age>
+    <email>TomHardy@gmail.com</email>
+</specalist>
+
+<specalist>
+    <sr>5</sr>
+    <name>Alexa Blizz</name>
+    <contact>9632587412</contact>
+    <experience>Aerobics</experience>
+    <age>25</age>
+    <email>AlexaBlizz@gmail.com</email>
+</specalist>
+
+<specalist>
+    <sr>6</sr>
+    <name>Nick Klair</name>
+    <contact>9632587412</contact>
+    <experience>Jumba</experience>
+    <age>32</age>
+    <email>NickKlair@gmail.com</email>
+</specalist>
+</data>

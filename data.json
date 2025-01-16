@@ -1,0 +1,32 @@
+[
+    {
+        "sr": "1",
+        "services": "Boxing",
+        "timing": "6:30PM To 8:45PM"
+    },
+    {
+        "sr": "2",
+        "services": "Yoga",
+        "timing": "5:30AM To 8:45AM"
+    },
+    {
+        "sr": "3",
+        "services": "Weight Loss",
+        "timing": "2:30PM To 3:45PM"
+    },
+    {
+        "sr": "4",
+        "services": "Aerobics",
+        "timing": "7:45AM To 10:45AM"
+    },
+    {
+        "sr": "5",
+        "services": "Jumba",
+        "timing": "4:30PM To 6:15PM"
+    },
+    {
+        "sr": "6",
+        "services": "Body Building",
+        "timing": "Full Day"
+    }
+]

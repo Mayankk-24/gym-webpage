@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn-1" onclick="myFun()">submit</button>
+    <div id="main"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#main").slideToggle(1000);
+            });
+        });
+
+        function myFun() {
+            var disdata = "<table border='5'><tr><th>sr</th><th>name</th><th>contact</th><th>experience</th><th>age</th><th>email</th></tr>";
+            var req = new XMLHttpRequest();
+            req.open("get", "data.xml", true);
+            req.onreadystatechange = function () {
+                if (req.readyState == 4 && req.status == 200) {
+                    var data = req.responseXML;
+                    var records = data.getElementsByTagName('specalist');
+                    for (i = 0; i < records.length; i++) {
+                        var sr = records[i].getElementsByTagName('sr')[0].textContent;
+                        var name = records[i].getElementsByTagName('name')[0].textContent;
+                        var contact = records[i].getElementsByTagName('contact').textContent;
+                        var experience = records[i].getElementsByTagName("experience")[0].textContent;
+                        var age = records[i].getElementsByTagName("age")[0].textContent;
+                        var email = records[i].getElementsByTagName("email")[0].textContent;
+                        disdata += "<tr><td>" + sr + "</td><td>" + name + "</td><td>" + contact + "</td><td>" + experience + "</td><td>" + age + "</td><td>" + email + "</td></tr>";
+                    }
+                    document.getElementById('main').innerHTML = disdata;
+                }
+            }
+            req.send();
+        }
+    </script>
+</body>
+
+</html>

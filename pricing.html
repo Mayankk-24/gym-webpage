@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <link rel="stylesheet" href="pricing.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="background-color: black;">
+    <script src="jquery.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#price-1").on({
+                mouseenter: function () {
+                    $(this).css({ "transition": "0.7s ease", "width": "390px", "height": "597px" })
+                },
+                mouseleave: function () {
+                    $(this).css({ "width": "360px", "height": "567px" })
+                }
+            });
+            $("#price-2").on({
+                mouseenter: function () {
+                    $(this).css({ "transition": "0.7s ease", "width": "390px", "height": "597px" })
+                },
+                mouseleave: function () {
+                    $(this).css({ "width": "360px", "height": "567px" })
+                }
+            });
+            $("#price-3").on({
+                mouseenter: function () {
+                    $(this).css({ "transition": "0.7s ease", "width": "390px", "height": "597px" })
+                },
+                mouseleave: function () {
+                    $(this).css({ "width": "360px", "height": "567px" })
+                }
+            });
+        });
+    </script>
+    <div class="bg-image">
+        <nav>
+            <div class="main-nav flex">
+                <a href="#" class="logo">
+                    <img src="./Assets/logo.png.webp" alt="logo">
+                </a>
+                <div class="nav-links">
+                    <ul class="flex">
+                        <li><a href="home.html" class="hover-link center" id="upper">Home</a></li>
+                        <li><a href="about.html" class="hover-link center" id="upper">About us</a></li>
+                        <!-- <li><a href="#" class="hover-link center" id="upper">Services</a></li> -->
+                        <li><a href="#" class="hover-link center" id="upper">Pricing</a></li>
+                        <li><a href="ContactUs.html" class="hover-link center" id="upper"
+                                style="display: inline;">Contact us</a>
+                        </li>
+                        <li><a href="login.html" class="secondary-button">Login</a></li>
+                        <li><a href="registration.html" class="primary-button">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb-text">
+                        <h2>Pricing</h2>
+                        <a href="home.html" style="text-decoration: none;">Home</a>
+                        <span id="after">></span>
+                        <span id="con">Pricing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pricing section -->
+
+    <section class="pricing-section">
+        <div class="container-price">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Our Plan</span>
+                        <h2>Choose your pricing plan</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8">
+                    <div class="ps-item" id="price-1">
+                        <h3>Class drop-in</h3>
+                        <h2>$ 39.0</h2>
+                        <span>SINGLE CLASS</span>
+                        <ul>
+                            <li>Free riding</li>
+                            <li>Unlimited equipments</li>
+                            <li>Personal trainer</li>
+                            <li>Weight losing classes</li>
+                            <li>Month to mouth</li>
+                            <li>No time restriction</li>
+                        </ul>
+                        <button class="pricing-button">Enroll now</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="ps-item" id="price-2">
+                        <h3>12 Month unlimited</h3>
+                        <h2>$ 99.0</h2>
+                        <span>SINGLE CLASS</span>
+                        <ul>
+                            <li>Free riding</li>
+                            <li>Unlimited equipments</li>
+                            <li>Personal trainer</li>
+                            <li>Weight losing classes</li>
+                            <li>Month to mouth</li>
+                            <li>No time restriction</li>
+                        </ul>
+                        <button class="pricing-button">Enroll now</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="ps-item" id="price-3">
+                        <h3>6 Month unlimited</h3>
+                        <h2>$ 59.0</h2>
+                        <span>SINGLE CLASS</span>
+                        <ul>
+                            <li>Free riding</li>
+                            <li>Unlimited equipments</li>
+                            <li>Personal trainer</li>
+                            <li>Weight losing classes</li>
+                            <li>Month to mouth</li>
+                            <li>No time restriction</li>
+                        </ul>
+                        <button class="pricing-button">Enroll now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- get in touch section -->
+    <section style="background-color: #0a0a0a; padding-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="gt-text-1">
+                    <!-- <img src="./Assets/map-marker.png" alt=""> -->
+                    <i class="fa fa-map-marker"></i>
+                    <p style="padding-top: 6px;">333 Middle Winchendon Rd, Rindge,<br>NH 03461</p>
+                </div>
+
+                <div class="gt-text-1">
+                    <i class="fa fa-mobile"></i>
+                    <p style="padding-top: 15px;">125-711-811 <span>|</span> 125-668-88</p>
+                </div>
+
+                <div class="gt-text-1">
+                    <i class="fa fa-envelope"></i>
+                    <p style="padding-top: 15px;">Support.gymcenter@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  section -->
+    <footer class="footer-section">
+        <div class="container" style="max-width:1170px;">
+            <div class="row" style="display: flex;">
+                <div class="col-lg-4">
+                    <div class="fs-about">
+                        <img src="./Assets/logo.png.webp" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore dolore magna aliqua endisse ultrices gravida lorem.</p>
+                        <div class="fa-social">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-youtube-play"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="fs-widget">
+                        <h4>Useful links</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Classes</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="fs-widget">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Subscribe</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="fs-widget">
+                        <h4>Tips & Guides</h4>
+                        <div class="fw-recent">
+                            <h6>Physical fitness may help prevent depression, anxiety</h6>
+                            <span>3 min read</span>
+                            <span>|</span>
+                            <span> 20 Comment</span>
+                        </div>
+                        <div class="fw-recent">
+                            <h6>Fitness: The best exercise to lose belly fat and tone up...</h6>
+                            <span>3 min read</span>
+                            <span>|</span>
+                            <span> 20 Comment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- copyright section -->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="copyright-text">
+                    <p style="color: #c4c4c4;">
+                        Copyright &copy2024 All rights reserved | This Website is made with <i class="fa fa-heart"
+                            aria-hidden="true"></i> by <span>Mayank Bhanderi</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
